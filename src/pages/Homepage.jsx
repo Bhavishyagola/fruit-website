@@ -1,159 +1,12 @@
-
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { Link } from 'react-router-dom';
-
+// import "owl.carousel/dist/assets/owl.carousel.css";
+// import "owl.carousel/dist/assets/owl.theme.default.css";
 const Homepage = () => {
   return (
     <>
-    <div className="container-fluid fixed-top">
-      <div className="container topbar bg-primary d-none d-lg-block">
-        <div className="d-flex justify-content-between">
-          <div className="top-info ps-2">
-            <small className="me-3">
-              <i className="fas fa-map-marker-alt me-2 text-secondary" />{" "}
-              <Link to="#" className="text-white">
-                123 Street, New York
-              </Link>
-            </small>
-            <small className="me-3">
-              <i className="fas fa-envelope me-2 text-secondary" />
-              <Link to="#" className="text-white">
-                Email@Example.com
-              </Link>
-            </small>
-          </div>
-          <div className="top-link pe-2">
-            <Link to="#" className="text-white">
-              <small className="text-white mx-2">Privacy Policy</small>/
-            </Link>
-            <Link to="#" className="text-white">
-              <small className="text-white mx-2">Terms of Use</small>/
-            </Link>
-            <Link to="#" className="text-white">
-              <small className="text-white ms-2">Sales and Refunds</small>
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className="container px-0">
-        <nav className="navbar navbar-light bg-white navbar-expand-xl">
-          <Link to="index.html" className="navbar-brand">
-            <h1 className="text-primary display-6">Fruitables</h1>
-          </Link>
-          <button
-            className="navbar-toggler py-2 px-3"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-          >
-            <span className="fa fa-bars text-primary" />
-          </button>
-          <div className="collapse navbar-collapse bg-white" id="navbarCollapse">
-            <div className="navbar-nav mx-auto">
-              <Link to="index.html" className="nav-item nav-link active">
-                Home
-              </Link>
-              <Link to="shop.html" className="nav-item nav-link">
-                Shop
-              </Link>
-              <Link to="shop-detail.html" className="nav-item nav-link">
-                Shop Detail
-              </Link>
-              <div className="nav-item dropdown">
-                <Link
-                  to="#"
-                  className="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
-                  Pages
-                </Link>
-                <div className="dropdown-menu m-0 bg-secondary rounded-0">
-                  <Link to="cart.html" className="dropdown-item">
-                    Cart
-                  </Link>
-                  <Link to="chackout.html" className="dropdown-item">
-                    Chackout
-                  </Link>
-                  <Link to="testimonial.html" className="dropdown-item">
-                    Testimonial
-                  </Link>
-                  <Link to="404.html" className="dropdown-item">
-                    404 Page
-                  </Link>
-                </div>
-              </div>
-              <Link to="contact.html" className="nav-item nav-link">
-                Contact
-              </Link>
-            </div>
-            <div className="d-flex m-3 me-0">
-              <button
-                className="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
-                data-bs-toggle="modal"
-                data-bs-target="#searchModal"
-              >
-                <i className="fas fa-search text-primary" />
-              </button>
-              <Link to="#" className="position-relative me-4 my-auto">
-                <i className="fa fa-shopping-bag fa-2x" />
-                <span
-                  className="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1"
-                  style={{ top: "-5px", left: 15, height: 20, minWidth: 20 }}
-                >
-                  3
-                </span>
-              </Link>
-              <Link to="#" className="my-auto">
-                <i className="fas fa-user fa-2x" />
-              </Link>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-    {/* Navbar End */}
-    {/* Modal Search Start */}
-    <div
-      className="modal fade"
-      id="searchModal"
-      tabIndex={-1}
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div className="modal-dialog modal-fullscreen">
-        <div className="modal-content rounded-0">
-          <div className="modal-header">
-            <h5 className="modal-title" id="exampleModalLabel">
-              Search by keyword
-            </h5>
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            />
-          </div>
-          <div className="modal-body d-flex align-items-center">
-            <div className="input-group w-75 mx-auto d-flex">
-              <input
-                type="search"
-                className="form-control p-3"
-                placeholder="keywords"
-                aria-describedby="search-icon-1"
-              />
-              <span id="search-icon-1" className="input-group-text p-3">
-                <i className="fa fa-search" />
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {/* Modal Search End */}
-    {/* Hero Start */}
+      {/* Hero Start */}
     <div className="container-fluid py-5 mb-5 hero-header">
       <div className="container py-5">
         <div className="row g-5 align-items-center">
@@ -190,9 +43,9 @@ const Homepage = () => {
                     className="img-fluid w-100 h-100 bg-secondary rounded"
                     alt="First slide"
                   />
-                  <Link to="#" className="btn px-4 py-2 text-white rounded">
+                  <a href="#" className="btn px-4 py-2 text-white rounded">
                     Fruites
-                  </Link>
+                  </a>
                 </div>
                 <div className="carousel-item rounded">
                   <img
@@ -200,9 +53,9 @@ const Homepage = () => {
                     className="img-fluid w-100 h-100 rounded"
                     alt="Second slide"
                   />
-                  <Link to="#" className="btn px-4 py-2 text-white rounded">
+                  <a href="#" className="btn px-4 py-2 text-white rounded">
                     Vesitables
-                  </Link>
+                  </a>
                 </div>
               </div>
               <button
@@ -228,7 +81,6 @@ const Homepage = () => {
         </div>
       </div>
     </div>
-    {/* Hero End */}
     {/* Featurs Section Start */}
     <div className="container-fluid featurs py-5">
       <div className="container py-5">
@@ -292,59 +144,59 @@ const Homepage = () => {
             <div className="col-lg-8 text-end">
               <ul className="nav nav-pills d-inline-flex text-center mb-5">
                 <li className="nav-item">
-                  <Link
+                  <a
                     className="d-flex m-2 py-2 bg-light rounded-pill active"
                     data-bs-toggle="pill"
-                    to="#tab-1"
+                    href="#tab-1"
                   >
                     <span className="text-dark" style={{ width: 130 }}>
                       All Products
                     </span>
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Link
+                  <a
                     className="d-flex py-2 m-2 bg-light rounded-pill"
                     data-bs-toggle="pill"
-                    to="#tab-2"
+                    href="#tab-2"
                   >
                     <span className="text-dark" style={{ width: 130 }}>
                       Vegetables
                     </span>
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Link
+                  <a
                     className="d-flex m-2 py-2 bg-light rounded-pill"
                     data-bs-toggle="pill"
-                    to="#tab-3"
+                    href="#tab-3"
                   >
                     <span className="text-dark" style={{ width: 130 }}>
                       Fruits
                     </span>
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Link
+                  <a
                     className="d-flex m-2 py-2 bg-light rounded-pill"
                     data-bs-toggle="pill"
-                    to="#tab-4"
+                    href="#tab-4"
                   >
                     <span className="text-dark" style={{ width: 130 }}>
                       Bread
                     </span>
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Link
+                  <a
                     className="d-flex m-2 py-2 bg-light rounded-pill"
                     data-bs-toggle="pill"
-                    to="#tab-5"
+                    href="#tab-5"
                   >
                     <span className="text-dark" style={{ width: 130 }}>
                       Meat
                     </span>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -379,13 +231,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -415,13 +267,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -451,13 +303,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -487,13 +339,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -523,13 +375,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -559,13 +411,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -595,13 +447,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -631,13 +483,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -675,13 +527,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -711,13 +563,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -755,13 +607,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -791,13 +643,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -835,13 +687,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -871,13 +723,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -915,13 +767,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -951,13 +803,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -987,13 +839,13 @@ const Homepage = () => {
                             <p className="text-dark fs-5 fw-bold mb-0">
                               $4.99 / kg
                             </p>
-                            <Link
-                              to="#"
+                            <a
+                              href="#"
                               className="btn border border-secondary rounded-pill px-3 text-primary"
                             >
                               <i className="fa fa-shopping-bag me-2 text-primary" />{" "}
                               Add to cart
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -1012,7 +864,7 @@ const Homepage = () => {
       <div className="container py-5">
         <div className="row g-4 justify-content-center">
           <div className="col-md-6 col-lg-4">
-            <Link to="#">
+            <a href="#">
               <div className="service-item bg-secondary rounded border border-secondary">
                 <img
                   src="img/featur-1.jpg"
@@ -1026,10 +878,10 @@ const Homepage = () => {
                   </div>
                 </div>
               </div>
-            </Link>
+            </a>
           </div>
           <div className="col-md-6 col-lg-4">
-            <Link to="#">
+            <a href="#">
               <div className="service-item bg-dark rounded border border-dark">
                 <img
                   src="img/featur-2.jpg"
@@ -1043,10 +895,10 @@ const Homepage = () => {
                   </div>
                 </div>
               </div>
-            </Link>
+            </a>
           </div>
           <div className="col-md-6 col-lg-4">
-            <Link to="#">
+            <a href="#">
               <div className="service-item bg-primary rounded border border-primary">
                 <img
                   src="img/featur-3.jpg"
@@ -1060,7 +912,7 @@ const Homepage = () => {
                   </div>
                 </div>
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -1070,10 +922,7 @@ const Homepage = () => {
     <div className="container-fluid vesitable py-5">
       <div className="container py-5">
         <h1 className="mb-0">Fresh Organic Vegetables</h1>
-        <OwlCarousel className="owl-carousel  loop margin={10} nav vegetable-carousel justify-content-center
-          dots={false}
-          autoplay={true}
-          items={3}">
+        <OwlCarousel className="owl-theme owl-carousel vegetable-carousel justify-content-center gap-3 p-5" margin={20} {...Option} nav dots={false} >
           <div className="border border-primary rounded position-relative vesitable-item">
             <div className="vesitable-img">
               <img
@@ -1096,20 +945,20 @@ const Homepage = () => {
               </p>
               <div className="d-flex justify-content-between flex-lg-wrap">
                 <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                <Link
-                  to="#"
+                <a
+                  href="#"
                   className="btn border border-secondary rounded-pill px-3 text-primary"
                 >
                   <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                   cart
-                </Link>
+                </a>
               </div>
             </div>
           </div>
           <div className="border border-primary rounded position-relative vesitable-item">
             <div className="vesitable-img">
               <img
-                src="img/vegetable-item-1.jpg"
+                src="img/vegetable-item-6.jpg"
                 className="img-fluid w-100 rounded-top"
                 alt=""
               />
@@ -1128,109 +977,13 @@ const Homepage = () => {
               </p>
               <div className="d-flex justify-content-between flex-lg-wrap">
                 <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                <Link
-                  to="#"
+                <a
+                  href="#"
                   className="btn border border-secondary rounded-pill px-3 text-primary"
                 >
                   <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                   cart
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="border border-primary rounded position-relative vesitable-item">
-            <div className="vesitable-img">
-              <img
-                src="img/vegetable-item-3.png"
-                className="img-fluid w-100 rounded-top bg-light"
-                alt=""
-              />
-            </div>
-            <div
-              className="text-white bg-primary px-3 py-1 rounded position-absolute"
-              style={{ top: 10, right: 10 }}
-            >
-              Vegetable
-            </div>
-            <div className="p-4 rounded-bottom">
-              <h4>Banana</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-                eiusmod te incididunt
-              </p>
-              <div className="d-flex justify-content-between flex-lg-wrap">
-                <p className="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-                <Link
-                  to="#"
-                  className="btn border border-secondary rounded-pill px-3 text-primary"
-                >
-                  <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
-                  cart
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="border border-primary rounded position-relative vesitable-item">
-            <div className="vesitable-img">
-              <img
-                src="img/vegetable-item-4.jpg"
-                className="img-fluid w-100 rounded-top"
-                alt=""
-              />
-            </div>
-            <div
-              className="text-white bg-primary px-3 py-1 rounded position-absolute"
-              style={{ top: 10, right: 10 }}
-            >
-              Vegetable
-            </div>
-            <div className="p-4 rounded-bottom">
-              <h4>Bell Papper</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-                eiusmod te incididunt
-              </p>
-              <div className="d-flex justify-content-between flex-lg-wrap">
-                <p className="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-                <Link
-                  to="#"
-                  className="btn border border-secondary rounded-pill px-3 text-primary"
-                >
-                  <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
-                  cart
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="border border-primary rounded position-relative vesitable-item">
-            <div className="vesitable-img">
-              <img
-                src="img/vegetable-item-5.jpg"
-                className="img-fluid w-100 rounded-top"
-                alt=""
-              />
-            </div>
-            <div
-              className="text-white bg-primary px-3 py-1 rounded position-absolute"
-              style={{ top: 10, right: 10 }}
-            >
-              Vegetable
-            </div>
-            <div className="p-4 rounded-bottom">
-              <h4>Potatoes</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-                eiusmod te incididunt
-              </p>
-              <div className="d-flex justify-content-between flex-lg-wrap">
-                <p className="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-                <Link
-                  to="#"
-                  className="btn border border-secondary rounded-pill px-3 text-primary"
-                >
-                  <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
-                  cart
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -1255,46 +1008,14 @@ const Homepage = () => {
                 eiusmod te incididunt
               </p>
               <div className="d-flex justify-content-between flex-lg-wrap">
-                <p className="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-                <Link
-                  to="#"
+                <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                <a
+                  href="#"
                   className="btn border border-secondary rounded-pill px-3 text-primary"
                 >
                   <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                   cart
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="border border-primary rounded position-relative vesitable-item">
-            <div className="vesitable-img">
-              <img
-                src="img/vegetable-item-5.jpg"
-                className="img-fluid w-100 rounded-top"
-                alt=""
-              />
-            </div>
-            <div
-              className="text-white bg-primary px-3 py-1 rounded position-absolute"
-              style={{ top: 10, right: 10 }}
-            >
-              Vegetable
-            </div>
-            <div className="p-4 rounded-bottom">
-              <h4>Potatoes</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-                eiusmod te incididunt
-              </p>
-              <div className="d-flex justify-content-between flex-lg-wrap">
-                <p className="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-                <Link
-                  to="#"
-                  className="btn border border-secondary rounded-pill px-3 text-primary"
-                >
-                  <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
-                  cart
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -1319,17 +1040,20 @@ const Homepage = () => {
                 eiusmod te incididunt
               </p>
               <div className="d-flex justify-content-between flex-lg-wrap">
-                <p className="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-                <Link
-                  to="#"
+                <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                <a
+                  href="#"
                   className="btn border border-secondary rounded-pill px-3 text-primary"
                 >
                   <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                   cart
-                </Link>
+                </a>
               </div>
             </div>
           </div>
+
+
+          {/* Repeat the vegetable items here as needed */}
         </OwlCarousel>
       </div>
     </div>
@@ -1346,12 +1070,12 @@ const Homepage = () => {
                 The generated Lorem Ipsum is therefore always free from repetition
                 injected humour, or non-characteristic words etc.
               </p>
-              <Link
-                to="#"
+              <a
+                href="#"
                 className="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5"
               >
                 BUY
-              </Link>
+              </a>
             </div>
           </div>
           <div className="col-lg-6">
@@ -1399,9 +1123,9 @@ const Homepage = () => {
                   />
                 </div>
                 <div className="col-6">
-                  <Link to="#" className="h5">
+                  <a href="#" className="h5">
                     Organic Tomato
-                  </Link>
+                  </a>
                   <div className="d-flex my-3">
                     <i className="fas fa-star text-primary" />
                     <i className="fas fa-star text-primary" />
@@ -1410,13 +1134,13 @@ const Homepage = () => {
                     <i className="fas fa-star" />
                   </div>
                   <h4 className="mb-3">3.12 $</h4>
-                  <Link
-                    to="#"
+                  <a
+                    href="#"
                     className="btn border border-secondary rounded-pill px-3 text-primary"
                   >
                     <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                     cart
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1432,9 +1156,9 @@ const Homepage = () => {
                   />
                 </div>
                 <div className="col-6">
-                  <Link to="#" className="h5">
+                  <a href="#" className="h5">
                     Organic Tomato
-                  </Link>
+                  </a>
                   <div className="d-flex my-3">
                     <i className="fas fa-star text-primary" />
                     <i className="fas fa-star text-primary" />
@@ -1443,13 +1167,13 @@ const Homepage = () => {
                     <i className="fas fa-star" />
                   </div>
                   <h4 className="mb-3">3.12 $</h4>
-                  <Link
-                    to="#"
+                  <a
+                    href="#"
                     className="btn border border-secondary rounded-pill px-3 text-primary"
                   >
                     <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                     cart
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1465,9 +1189,9 @@ const Homepage = () => {
                   />
                 </div>
                 <div className="col-6">
-                  <Link to="#" className="h5">
+                  <a href="#" className="h5">
                     Organic Tomato
-                  </Link>
+                  </a>
                   <div className="d-flex my-3">
                     <i className="fas fa-star text-primary" />
                     <i className="fas fa-star text-primary" />
@@ -1476,13 +1200,13 @@ const Homepage = () => {
                     <i className="fas fa-star" />
                   </div>
                   <h4 className="mb-3">3.12 $</h4>
-                  <Link
-                    to="#"
+                  <a
+                    href="#"
                     className="btn border border-secondary rounded-pill px-3 text-primary"
                   >
                     <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                     cart
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1498,9 +1222,9 @@ const Homepage = () => {
                   />
                 </div>
                 <div className="col-6">
-                  <Link to="#" className="h5">
+                  <a href="#" className="h5">
                     Organic Tomato
-                  </Link>
+                  </a>
                   <div className="d-flex my-3">
                     <i className="fas fa-star text-primary" />
                     <i className="fas fa-star text-primary" />
@@ -1509,13 +1233,13 @@ const Homepage = () => {
                     <i className="fas fa-star" />
                   </div>
                   <h4 className="mb-3">3.12 $</h4>
-                  <Link
-                    to="#"
+                  <a
+                    href="#"
                     className="btn border border-secondary rounded-pill px-3 text-primary"
                   >
                     <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                     cart
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1531,9 +1255,9 @@ const Homepage = () => {
                   />
                 </div>
                 <div className="col-6">
-                  <Link to="#" className="h5">
+                  <a href="#" className="h5">
                     Organic Tomato
-                  </Link>
+                  </a>
                   <div className="d-flex my-3">
                     <i className="fas fa-star text-primary" />
                     <i className="fas fa-star text-primary" />
@@ -1542,13 +1266,13 @@ const Homepage = () => {
                     <i className="fas fa-star" />
                   </div>
                   <h4 className="mb-3">3.12 $</h4>
-                  <Link
-                    to="#"
+                  <a
+                    href="#"
                     className="btn border border-secondary rounded-pill px-3 text-primary"
                   >
                     <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                     cart
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1564,9 +1288,9 @@ const Homepage = () => {
                   />
                 </div>
                 <div className="col-6">
-                  <Link to="#" className="h5">
+                  <a href="#" className="h5">
                     Organic Tomato
-                  </Link>
+                  </a>
                   <div className="d-flex my-3">
                     <i className="fas fa-star text-primary" />
                     <i className="fas fa-star text-primary" />
@@ -1575,13 +1299,13 @@ const Homepage = () => {
                     <i className="fas fa-star" />
                   </div>
                   <h4 className="mb-3">3.12 $</h4>
-                  <Link
-                    to="#"
+                  <a
+                    href="#"
                     className="btn border border-secondary rounded-pill px-3 text-primary"
                   >
                     <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                     cart
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1594,9 +1318,9 @@ const Homepage = () => {
                 alt=""
               />
               <div className="py-4">
-                <Link to="#" className="h5">
+                <a href="#" className="h5">
                   Organic Tomato
-                </Link>
+                </a>
                 <div className="d-flex my-3 justify-content-center">
                   <i className="fas fa-star text-primary" />
                   <i className="fas fa-star text-primary" />
@@ -1605,13 +1329,13 @@ const Homepage = () => {
                   <i className="fas fa-star" />
                 </div>
                 <h4 className="mb-3">3.12 $</h4>
-                <Link
-                  to="#"
+                <a
+                  href="#"
                   className="btn border border-secondary rounded-pill px-3 text-primary"
                 >
                   <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                   cart
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -1623,9 +1347,9 @@ const Homepage = () => {
                 alt=""
               />
               <div className="py-4">
-                <Link to="#" className="h5">
+                <a href="#" className="h5">
                   Organic Tomato
-                </Link>
+                </a>
                 <div className="d-flex my-3 justify-content-center">
                   <i className="fas fa-star text-primary" />
                   <i className="fas fa-star text-primary" />
@@ -1634,13 +1358,13 @@ const Homepage = () => {
                   <i className="fas fa-star" />
                 </div>
                 <h4 className="mb-3">3.12 $</h4>
-                <Link
-                  to="#"
+                <a
+                  href="#"
                   className="btn border border-secondary rounded-pill px-3 text-primary"
                 >
                   <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                   cart
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -1652,9 +1376,9 @@ const Homepage = () => {
                 alt=""
               />
               <div className="py-4">
-                <Link to="#" className="h5">
+                <a href="#" className="h5">
                   Organic Tomato
-                </Link>
+                </a>
                 <div className="d-flex my-3 justify-content-center">
                   <i className="fas fa-star text-primary" />
                   <i className="fas fa-star text-primary" />
@@ -1663,13 +1387,13 @@ const Homepage = () => {
                   <i className="fas fa-star" />
                 </div>
                 <h4 className="mb-3">3.12 $</h4>
-                <Link
-                  to="#"
+                <a
+                  href="#"
                   className="btn border border-secondary rounded-pill px-3 text-primary"
                 >
                   <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                   cart
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -1681,9 +1405,9 @@ const Homepage = () => {
                 alt=""
               />
               <div className="py-2">
-                <Link to="#" className="h5">
+                <a href="#" className="h5">
                   Organic Tomato
-                </Link>
+                </a>
                 <div className="d-flex my-3 justify-content-center">
                   <i className="fas fa-star text-primary" />
                   <i className="fas fa-star text-primary" />
@@ -1692,13 +1416,13 @@ const Homepage = () => {
                   <i className="fas fa-star" />
                 </div>
                 <h4 className="mb-3">3.12 $</h4>
-                <Link
-                  to="#"
+                <a
+                  href="#"
                   className="btn border border-secondary rounded-pill px-3 text-primary"
                 >
                   <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
                   cart
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -1745,13 +1469,14 @@ const Homepage = () => {
     </div>
     {/* Fact Start */}
     {/* Tastimonial Start */}
-    <div className="container-fluid testimonial py-5" >
+    <div className="container-fluid testimonial py-5">
       <div className="container py-5">
         <div className="testimonial-header text-center">
           <h4 className="text-primary">Our Testimonial</h4>
           <h1 className="display-5 mb-5 text-dark">Our Client Saying!</h1>
         </div>
-        <OwlCarousel className="owl-carousel testimonial-carousel">
+        <OwlCarousel className="owl-theme owl-carousel vegetable-carousel justify-content-center gap-3 p-5" items={2} margin={20} {...Option} nav dots={false} >
+       
           <div className="testimonial-item img-border-radius bg-light rounded p-4">
             <div className="position-relative">
               <i
@@ -1859,170 +1584,10 @@ const Homepage = () => {
           </div>
         </OwlCarousel>
       </div>
+      {/* Tastimonial End */}
+      {/* Footer Start */}
+ 
     </div>
-    {/* Tastimonial End */}
-    {/* Footer Start */}
-    <div className="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
-      <div className="container py-5">
-        <div
-          className="pb-4 mb-4"
-          style={{ borderBottom: "1px solid rgba(226, 175, 24, 0.5)" }}
-        >
-          <div className="row g-4">
-            <div className="col-lg-3">
-              <Link to="#">
-                <h1 className="text-primary mb-0">Fruitables</h1>
-                <p className="text-secondary mb-0">Fresh products</p>
-              </Link>
-            </div>
-            <div className="col-lg-6">
-              <div className="position-relative mx-auto">
-                <input
-                  className="form-control border-0 w-100 py-3 px-4 rounded-pill"
-                  type="number"
-                  placeholder="Your Email"
-                />
-                <button
-                  type="submit"
-                  className="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white"
-                  style={{ top: 0, right: 0 }}
-                >
-                  Subscribe Now
-                </button>
-              </div>
-            </div>
-            <div className="col-lg-3">
-              <div className="d-flex justify-content-end pt-3">
-                <Link
-                  className="btn  btn-outline-secondary me-2 btn-md-square rounded-circle"
-                  to=""
-                >
-                  <i className="fab fa-twitter" />
-                </Link>
-                <Link
-                  className="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-                  to=""
-                >
-                  <i className="fab fa-facebook-f" />
-                </Link>
-                <Link
-                  className="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-                  to=""
-                >
-                  <i className="fab fa-youtube" />
-                </Link>
-                <Link
-                  className="btn btn-outline-secondary btn-md-square rounded-circle"
-                  to=""
-                >
-                  <i className="fab fa-linkedin-in" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row g-5">
-          <div className="col-lg-3 col-md-6">
-            <div className="footer-item">
-              <h4 className="text-light mb-3">Why People Like us!</h4>
-              <p className="mb-4">
-                typesetting, remaining essentially unchanged. It was popularised
-                in the 1960s with the like Aldus PageMaker including of Lorem
-                Ipsum.
-              </p>
-              <Link
-                to=""
-                className="btn border-secondary py-2 px-4 rounded-pill text-primary"
-              >
-                Read More
-              </Link>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6">
-            <div className="d-flex flex-column text-start footer-item">
-              <h4 className="text-light mb-3">Shop Info</h4>
-              <Link className="btn-link" to="">
-                About Us
-              </Link>
-              <Link className="btn-link" to="">
-                Contact Us
-              </Link>
-              <Link className="btn-link" to="">
-                Privacy Policy
-              </Link>
-              <Link className="btn-link" to="">
-                Terms &amp; Condition
-              </Link>
-              <Link className="btn-link" to="">
-                Return Policy
-              </Link>
-              <Link className="btn-link" to="">
-                FAQs &amp; Help
-              </Link>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6">
-            <div className="d-flex flex-column text-start footer-item">
-              <h4 className="text-light mb-3">Account</h4>
-              <Link className="btn-link" to="">
-                My Account
-              </Link>
-              <Link className="btn-link" to="">
-                Shop details
-              </Link>
-              <Link className="btn-link" to="">
-                Shopping Cart
-              </Link>
-              <Link className="btn-link" to="">
-                Wishlist
-              </Link>
-              <Link className="btn-link" to="">
-                Order History
-              </Link>
-              <Link className="btn-link" to="">
-                International Orders
-              </Link>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6">
-            <div className="footer-item">
-              <h4 className="text-light mb-3">Contact</h4>
-              <p>Address: 1429 Netus Rd, NY 48247</p>
-              <p>Email: Example@gmail.com</p>
-              <p>Phone: +0123 4567 8910</p>
-              <p>Payment Accepted</p>
-              <img src="img/payment.png" className="img-fluid" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {/* Footer End */}
-    {/* Copyright Start */}
-    <div className="container-fluid copyright bg-dark py-4">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <span className="text-light">
-              <Link to="#">
-                <i className="fas fa-copyright text-light me-2" />
-                Your Site Name
-              </Link>
-              , All right reserved.
-            </span>
-          </div>
-         
-        </div>
-      </div>
-    </div>
-    {/* Copyright End */}
-    {/* Back to Top */}
-    <Link
-      to="#"
-      className="btn btn-primary border-3 border-primary rounded-circle back-to-top"
-    >
-      <i className="fa fa-arrow-up" />
-    </Link>
   </>
   
   )

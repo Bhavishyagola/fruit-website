@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Contact from '../../pages/Contact';
@@ -6,9 +6,7 @@ import Contact from '../../pages/Contact';
 const Header = () => {
   return (
     <div>
-      {/* Spinner Start */}
-    {/* Spinner End */}
-    {/* Navbar start */}
+      
     <div className="container-fluid fixed-top">
       <div className="container topbar bg-primary d-none d-lg-block">
         <div className="d-flex justify-content-between">
@@ -16,7 +14,7 @@ const Header = () => {
             <small className="me-3">
               <i className="fas fa-map-marker-alt me-2 text-secondary" />{" "}
               <a href="#" className="text-white">
-                123 Street, New York
+               new Delhi , india
               </a>
             </small>
             <small className="me-3">
